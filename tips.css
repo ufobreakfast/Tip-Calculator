@@ -1,0 +1,292 @@
+html, body {  
+/* background-image: url("https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60"); */
+ 
+background: #E0EAFC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-repeat: no-repeat;
+background-position: center left;
+background-attachment: fixed;
+background-size: cover;
+font-family: Roboto;
+ /* fallback for old browsers  */
+background: -webkit-linear-gradient(to left, #8E0E00, #1F1C18); 
+/* Chrome 10-25, Safari 5.1-6 */ */
+background: linear-gradient(to left, #8E0E00, #1F1C18);
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+; */
+    }
+  
+  #container {
+    height: auto;
+    width: auto;
+    background: transparent;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    } 
+  
+  h1 {
+     margin: 0;
+    padding: 10px 100px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: normal;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+  }
+
+  form input[type="text"] {
+    width: 90px;
+  }
+  
+  input {
+    padding-left: 20px;
+  }
+  
+  #billamt {
+    font-size: 14px;
+    color:black;
+    background-color: #f7f7f7;
+    padding: 5px 5px 8px 8px;
+  }
+  
+  #billamt:focus {
+    background: #fff;
+    border: 3px solid #2980b9;
+    outline: none;
+  }
+  
+  #peopleamt {
+    padding: 5px 5px 8px 8px;
+    margin-left: 2px;
+    color: black;
+    background-color: #f7f7f7;
+    font-size: 14px;
+  }
+  
+  .dollarSign {
+    display: inline;
+  }  
+  
+  #serviceQual {
+    padding: 13px 13px 20px 20px;
+    margin-left: 2px;
+    font-size: 25px;
+  }
+  
+  button {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 30px auto;
+    background:#E0EAFC ;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    color: white;
+   }
+  
+  button:hover {
+    background: #0a0a0a;
+    border-bottom-color: #111;
+  }
+  
+  button:active {
+    position: relative;
+    top: 1px;
+  }
+  
+  #totalTip {
+    font-size: 30px;
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  #totalTip:before {
+    content: "Tip amount";
+    font-size: 11px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+  }
+  
+  #totalTip sup {
+    font-size: 20px;
+    top: -18px;
+  }
+  
+  #totalTip small {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+  }
+
+  #calculator {
+
+    align-items: center;
+    text-align: center;
+  }
+
+  /* <!-- 3d bg  --> */
+  @import url(//fonts.googleapis.com/css?family=Lato:300:400);
+  body {
+      margin: 0;
+  }
+  h1 {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      letter-spacing: 2px;
+      font-size: 48px;
+  }
+  p {
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 1px;
+      font-size: 14px;
+      color: #333333;
+  }
+  .header {
+      position: relative;
+      text-align: center;
+      background:transparent;
+      color: white;
+  }
+  .logo {
+      width: 50px;
+      fill: white;
+      padding-right: 15px;
+      display: inline-block;
+      vertical-align: middle;
+  }
+  /* .inner-header {
+      height: 65vh;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+  } */
+  .flex {
+      /*Flexbox for containers*/
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+  .waves {
+      position: relative;
+      width: 100%;
+      height: 15vh;
+      margin-bottom: -7px;
+      /*Fix for safari gap*/
+      min-height: 100px;
+      max-height: 150px;
+  }
+  .content {
+      position: relative;
+      height: 20vh;
+      text-align: center;
+      background-color: white;
+  }
+  /* Animation */
+  .parallax>use {
+      animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+  }
+  .parallax>use:nth-child(1) {
+      animation-delay: -2s;
+      animation-duration: 7s;
+  }
+  .parallax>use:nth-child(2) {
+      animation-delay: -3s;
+      animation-duration: 10s;
+  }
+  .parallax>use:nth-child(3) {
+      animation-delay: -4s;
+      animation-duration: 13s;
+  }
+  .parallax>use:nth-child(4) {
+      animation-delay: -5s;
+      animation-duration: 20s;
+  }
+  @keyframes move-forever {
+      0% {
+          transform: translate3d(-90px, 0, 0);
+      }
+      100% {
+          transform: translate3d(85px, 0, 0);
+      }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+      .waves {
+          height: 40px;
+          min-height: 40px;
+      }
+      .content {
+          height: 30vh;
+      }
+      h1 {
+          font-size: 24px;
+      }
+  }
+
+  /* <!-- 3d bg end  --> */
+
+ /* amate text nerd logo  */
+ .link {
+  outline: none;
+  text-decoration: none;
+  position: relative;
+  font-size: 2em;
+  line-height: 1;
+  color: red;
+  display: inline-block;
+  padding-left: 42%;
+  padding-bottom: 2%;
+
+  }
+     
+ .link--change {
+  text-transform: uppercase;
+  font-weight: 650;
+  overflow: hidden;
+  line-height: 0.75;
+  color: black;
+
+  }
+     
+ .link--change:hover {
+  color: transparent;
+  
+  }
+     
+ .link--change::after {
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 100%;
+  top: 50%;
+  margin-top: -4px;
+  right: 0;
+  background: black;
+  transform: translate3d(-50%,0,0);
+  transition: transform .3s;
+  transition-timing-function: cubic-bezier (0.7,0,0.3,1);
+  }
+     
+ .link--change:hover::after {
+  transform: translate3d(100%,0,0);
+  }
+     
+ .link--change::before {
+  content: attr(data-letters);
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+  color: black;
+  white-space: nowrap;
+  width: 0%;
+  transition: width 0.6s 0.5s;
+  }
+     
+ .link--change:hover::before {
+  width: 100%;
+  }
+/* end  */
