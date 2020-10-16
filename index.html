@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+<link rel="stylesheet" href="tips.css">
+</head>
+<body>
+ 
+  <!-- jumbotron -->
+  <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+  <h1 class="display-4"></h1>
+  <p class="lead"></p>
+  <div id="container">
+
+  <!-- wave bg  -->
+  <div class="header">
+  <div class="inner-header flex">
+  <svg version="1.1" class="logo" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve">
+  </svg>
+  </div>
+<!-- wave bg end  -->
+
+<!-- main content  -->
+<!-- Calculator  -->
+ <h1>Tip Calculator</h1>
+ <h3>Free to use Application for everyone!!!</h3>
+ <h3>Created by </h3>
+ <h3><a href="http://nerdscoffee.com/index.html" target="_blank" rel="noopener noreferrer"> Nerds + Coffee</a></h3>
+ <div id="calculator">
+ <form>
+ <p>How much was your bill?
+ <p>
+ $ <input id="billamt" type="text" placeholder="Bill Amount">
+ <p>How was your service?
+ </p>
+ <select id="serviceQual">
+ <option disabled selected value="0">-- Choose an Option --</option>
+ <option value="0.3">30&#37; &#45; Outstanding</option>
+ <option value="0.2">20&#37; &#45; Good</option>
+ <option value="0.15">15&#37; &#45; Ok</option>
+ <option value="0.1">10&#37; &#45; Bad</option>
+ <option value="0.05">5&#37; &#45; Terrible</option>
+ </select>
+ </form>
+ <p>How many people are sharing the bill?</p>
+ <input id="peopleamt" type="text" placeholder="Number of People"> 
+ <button type="button" id="calculate">Calculate!</button>
+ </div>
+ <!--calculator end-->
+  <div id="totalTip">
+  <sup>$</sup><span id="tip">0.00</span>
+  <small id="each">each</small>
+  </div>
+  <!--totalTip end-->
+  </div>
+  <!--container end-->
+  </div>
+  </div></div>
+
+<!-- main content end  -->
+
+<!--Waves Container-->
+  <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+  <defs>
+  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+  </defs>
+  <g class="parallax">
+  <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+  <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+  </g>
+  </svg>
+  </div></div>
+<!--Waves end-->
+
+<!-- nerd  -->
+<h2 class="nerd">Application Developed by</h2> 
+<a class="link link--change animated slideInLeft nerd" href="http://nerdscoffee.com/index.html" target="_blank" data-letters="Nerds + Coffee">Nerds + Coffee</a>
+
+<script type="text/javascript" src="tips.js"></script>
+</body>
+</html>
